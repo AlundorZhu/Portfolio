@@ -1,0 +1,44 @@
+body{
+  margin: 0;
+  height: 8000px;
+}
+
+.header-wrapper{
+  background-color: darkkhaki;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  position: sticky;
+  top: 0;
+  height: 4vh;
+}
+
+.tabs{
+  /*border: 1px sol id green;*/
+  /*margin: 0 auto;*/
+  margin-left: 2.5vw;
+  margin-right: 2.5vw;
+}
+
+.home{
+  height: 2500px;
+  border: 1px solid green;
+  background-color: antiquewhite;
+}
+
+.home-wrapper {
+  display: flex;
+}
+
+.mypicture {
+  overfow: hidden;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+}
