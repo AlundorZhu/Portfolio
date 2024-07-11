@@ -2,9 +2,9 @@
   margin: 0;
 }
 
-html {
+/* html {
   scroll-behavior: smooth;
-}
+} */
 
 
 body{
@@ -64,3 +64,4 @@ body{
   border-radius: 60%;
 
 }
+

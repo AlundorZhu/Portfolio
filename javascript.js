@@ -1,21 +1,15 @@
-console.log('hello world');
+document.addEventListener("DOMContentLoaded", () => {
+  const myelement = document.getElementById('home-id')
 
-document.addEventListener('DOMContentLoaded', () => {
-    const links = document.querySelectorAll('a[href^="#"]');
+  const mybutton = document.getElementById("homebutton")
 
-    for (const link of links) {
-        link.addEventListener('click', (event) => {
-            event.preventDefault();
 
-            const targetId = link.getAttribute('href').substring(1);
-            const targetElement = document.getElementById(targetId);
 
-            if (targetElement) {
-                window.scrollTo({
-                    top: targetElement.offsetTop,
-                    behavior: 'smooth'
-                });
-            }
-        });
-    }
+  mybutton.addEventListener("click", (e) => {
+    myelement.scrollIntoView({
+        behavior: "smooth"
+    })
+  })
 });
+
+
