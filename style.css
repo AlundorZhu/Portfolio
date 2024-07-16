@@ -2,17 +2,16 @@
   margin: 0;
 }
 
-/* html {
+html {
   scroll-behavior: smooth;
-} */
-
-
-body{
-  margin: 0;
-  height: 8000px;
+  /*background: linear-gradient(#e66465, #9198e5);*/
 }
 
-.header-wrapper{
+body {
+  background-color: rgb(26 26 26);
+}
+
+.nav-bar {
   background-color: #2d3763;
   display: flex;
   flex-wrap: nowrap;
@@ -29,30 +28,33 @@ body{
   /*margin: 0 auto;*/
   margin-left: 2.5vw;
   margin-right: 2.5vw;
+  text-decoration: none;
+  color: white;
 }
 
 
-.home-wrapper {
+
+
+.home {
   display: flex;
-  padding-left: 10vw;
-  padding-right: 10vw;
+  justify-content: space-between;
+  padding-left: 15vw;
+  padding-right: 15vw;
 
-  background-color: #1d264a;
-
+  /*background-color: #1d264a;*/
 }
 
 .home-text{
   text-align: justify;
-  width:70%;
-  margin-right: 2.5vw;
+  width:50%;
+  margin-right: 5vw;
   color: white;
   font-size: 1.2vw;
-  margin-top: 5vh;
+  margin-top: 15vh;
 }
 
-
 .mypicture-wrapper {
-  padding-top: 3vw;
+  padding-top: 10vh;
   width: 30%;
 }
 
@@ -62,6 +64,109 @@ body{
   object-fit: cover;
   object-position: top center;
   border-radius: 60%;
+}
+
+
+.education-header{
+  text-align: center;
+  font-size: 6.5vh;
+  color: orange;
+  margin-bottom: 5vh;
+}
+
+.education-header::before,
+.education-header::after {
+  display: inline-block;
+  content: "";
+  border-top: .3rem solid orange;
+  width: 20rem;
+  margin: 0 1rem;
+  transform: translateY(-0.5rem);
+}
+
+.education-wrapper{
+  padding-top: 10vh;
+}
+
+.education{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 15vw;
+  padding-right: 15vw;
+}
+
+
+.mypicture-education-wrapper{
+  width: 30%;
+}
+
+.mypicture-education {
+  width: 30vw;
+}
+
+.education-text {
+  color: white;
+  width: 35vw;
+}
+
+ul {
+  padding: 1.5vw;
+}
+
+#work-experience {
+  /*background-color: blue;*/
+}
+
+
+
+#projects{
+  padding-top: 10vh;
+}
+
+
+.projects-wrapper {
+
+  display: flex;
+  flex-wrap: wrap;
+  /*background-color: black;*/
+}
+
+
+.projects {
+  width: 49%;
 
 }
 
+.project1 {
+  margin-left: 5vw;
+  /*margin-right: 5vw;*/
+  padding-right: 5vw;
+  border-right: 5px solid orange;
+  color: white;
+}
+
+
+
+.project2{
+  margin-top: 40vh;
+  border-left: 5px solid orange;
+  padding-left: 5vw;
+
+  margin-right: 5vw;
+  color: white;
+}
+
+.project3{
+  border-right: 5px solid orange;
+  padding-left: 5vw;
+  margin-right: 5vw;
+  color: white;
+}
+
+.mypicture-project-wrapper {
+
+}
+
+.mypicture-project {
+  width: 100%;
+}
