@@ -21,6 +21,8 @@ body {
   position: sticky;
   top: 0;
   height: 4vh;
+
+  z-index: 100;
 }
 
 .tabs{
@@ -84,7 +86,7 @@ body {
   transform: translateY(-0.5rem);
 }
 
-.education-wrapper{
+.education-wrapper, .work-experience-wrapper{
   padding-top: 10vh;
 }
 
@@ -133,34 +135,20 @@ ul {
 
 
 .projects {
-  width: 49%;
-
+  width: 50%;
 }
 
-.project1 {
+.project1, .project2, .project3 {
   margin-left: 5vw;
-  /*margin-right: 5vw;*/
-  padding-right: 5vw;
-  border-right: 5px solid orange;
+  margin-right: 5vw;
   color: white;
 }
-
-
 
 .project2{
   margin-top: 40vh;
-  border-left: 5px solid orange;
-  padding-left: 5vw;
-
-  margin-right: 5vw;
-  color: white;
 }
 
 .project3{
-  border-right: 5px solid orange;
-  padding-left: 5vw;
-  margin-right: 5vw;
-  color: white;
 }
 
 .mypicture-project-wrapper {
@@ -169,4 +157,69 @@ ul {
 
 .mypicture-project {
   width: 100%;
+}
+
+.vertical-line {
+  /*transform: rotate(90deg) translateX(56%) translateY(-50px);*/
+  /*width: 89vw;*/
+  /*border-color: orange;*/
+  /*border-width: 2px;*/
+
+  width: 3px;
+  background-color: orange;
+  position: absolute;
+  right: 50%;
+  height: 1750px;
+}
+
+
+
+
+
+/*work experience section*/
+.work-experience-wrapper {
+  margin-top: 10vh;
+}
+
+.job{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  /*margin-bottom: 10vh;*/
+
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+
+  margin-left: 25vw;
+  margin-right: 25vw;
+
+  border: 1px solid orange;
+}
+
+.job-logo{
+  width: 30vw;
+}
+
+.job-picture{
+  object-fit: cover;
+  width: 100%;
+}
+
+.job-company-name{
+  margin-top: 3.5vh;
+}
+
+.job-text{
+  margin-top: 3.5vh;
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: justify;
+}
+
+.job hr {
+  width: 90%;
+  border: 1px solid orange;
+  margin-top: 2vh;
 }
