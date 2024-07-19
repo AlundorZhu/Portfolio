@@ -184,6 +184,14 @@ ul {
   font-size: 1.4rem;
 }
 
+#project1{
+  position: absolute;
+  width: 40%;
+  transform: translateY(-200%);
+
+  opacity: 0;
+}
+
 .project1, .project2, .project3 {
   margin-left: 5vw;
   margin-right: 5vw;
@@ -297,4 +305,43 @@ ul {
   width: 90%;
   border: 1px solid orange;
   margin-top: 2vh;
+}
+
+
+
+
+
+
+
+.image-container {
+  position: relative;
+  display: inline-block;
+  /*width: 300px; !* Set the desired width *!*/
+  /*height: 200px; !* Set the desired height *!*/
+}
+
+.hover-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.hover-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white; /* Adjust text color */
+  background-color: rgba(0, 0, 0, 0.7); /* Adjust background color and transparency */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease;
+  pointer-events: none; /* Prevent the hover-text from blocking mouse events */
+}
+
+.image-container:hover .hover-text {
+  opacity: 1; /* Show text on hover */
 }
