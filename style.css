@@ -81,14 +81,6 @@ body {
   color: orange;
 }
 
-
-
-
-
-
-
-
-
 .mypicture-wrapper {
   padding-top: 10vh;
   width: 30%;
@@ -101,6 +93,12 @@ body {
   object-position: top center;
   border-radius: 60%;
 }
+
+
+
+
+
+
 
 
 .education-header{
@@ -127,8 +125,8 @@ body {
 .education{
   display: flex;
   justify-content: space-between;
-  padding-left: 15vw;
-  padding-right: 15vw;
+  padding-left: 12vw;
+  padding-right: 12vw;
 }
 
 
@@ -147,7 +145,6 @@ body {
 .education-text {
   font-size: 1.4rem;
   color: white;
-  width: 35vw;
 }
 
 ul {
