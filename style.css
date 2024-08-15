@@ -45,8 +45,6 @@ body {
   justify-content: space-between;
   padding-left: 15vw;
   padding-right: 15vw;
-
-  /*background-color: #1d264a;*/
 }
 
 .home h1 {
@@ -65,22 +63,20 @@ body {
 .home-buttons {
   display: flex;
   flex-direction: row;
-
+  padding-top: 1vw;
   align-items: center;
 }
 
-.github-image-container{
+.home-image-container{
   height: 4vh;
   margin-right: 1vw;
 }
 
 .image-button{
   height: 100%;
-
 }
 
-.home a{
-  padding-top: 1vw;
+.resume-link{
   text-decoration: none;
   color: orange;
 }
